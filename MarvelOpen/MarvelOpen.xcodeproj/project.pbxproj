@@ -183,7 +183,7 @@
 				038407082825062C00B2FFB6 /* AppController */,
 				038406F32824F6D500B2FFB6 /* Services */,
 				038406F22824F6CC00B2FFB6 /* Helpers */,
-				038406EE2824F5C700B2FFB6 /* MVVM */,
+				038406EE2824F5C700B2FFB6 /* Modules */,
 				038406C72824F5A400B2FFB6 /* Assets.xcassets */,
 				038406C92824F5A400B2FFB6 /* LaunchScreen.storyboard */,
 				038406CC2824F5A400B2FFB6 /* Info.plist */,
@@ -215,13 +215,13 @@
 			path = MarvelOpenUITests;
 			sourceTree = "<group>";
 		};
-		038406EE2824F5C700B2FFB6 /* MVVM */ = {
+		038406EE2824F5C700B2FFB6 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
 				080F08D8282D9A5E00B231EC /* Characters */,
 				080F08D9282D9A8700B231EC /* CharacterDetail */,
 			);
-			path = MVVM;
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		038406EF2824F5DD00B2FFB6 /* ViewModel */ = {
@@ -336,18 +336,10 @@
 		080F08D9282D9A8700B231EC /* CharacterDetail */ = {
 			isa = PBXGroup;
 			children = (
-				080F08DB282D9AAF00B231EC /* Model */,
 				080F08DE282D9AD400B231EC /* View */,
 				080F08DC282D9ABC00B231EC /* ViewModel */,
 			);
 			path = CharacterDetail;
-			sourceTree = "<group>";
-		};
-		080F08DB282D9AAF00B231EC /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		080F08DC282D9ABC00B231EC /* ViewModel */ = {
