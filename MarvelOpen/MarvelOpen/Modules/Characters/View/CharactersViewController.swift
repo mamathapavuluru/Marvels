@@ -68,6 +68,14 @@ extension CharactersViewController: UITableViewDelegate, UITableViewDataSource
         return UITableView.automaticDimension
     }
     
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return .leastNonzeroMagnitude
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return UIView.init(frame: .zero)
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        
         guard let cell = tableView.dequeueReusableCell(withIdentifier: kCharactersCellIdentifier, for: indexPath) as? CharacterCell else { fatalError("xib does not exists") }

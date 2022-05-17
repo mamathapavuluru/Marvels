@@ -41,6 +41,7 @@
 		08DBD9DA282ED528008B804D /* ResultsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DBD9D9282ED528008B804D /* ResultsModel.swift */; };
 		8442152A283382E6006FF532 /* CharactersServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84421529283382E6006FF532 /* CharactersServiceTest.swift */; };
 		8442152C28338B3F006FF532 /* EnterAPIKeys.png in Resources */ = {isa = PBXBuildFile; fileRef = 8442152B28338B3F006FF532 /* EnterAPIKeys.png */; };
+		8442152E2833AB5F006FF532 /* CharactersList.png in Resources */ = {isa = PBXBuildFile; fileRef = 8442152D2833AB5F006FF532 /* CharactersList.png */; };
 		8448628A282E7B5700348C77 /* APIKeysRetriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84486289282E7B5700348C77 /* APIKeysRetriver.swift */; };
 		8448628C282E7CE600348C77 /* APIAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448628B282E7CE600348C77 /* APIAuthenticator.swift */; };
 		8448628F2832290100348C77 /* CharactersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080F08D6282D849F00B231EC /* CharactersService.swift */; };
@@ -63,7 +64,6 @@
 		844862A3283248FC00348C77 /* CharacterDetailViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844862A2283248FC00348C77 /* CharacterDetailViewModelTest.swift */; };
 		844862A7283250CC00348C77 /* APIAuthenticatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844862A6283250CC00348C77 /* APIAuthenticatorTest.swift */; };
 		844862AC2832819600348C77 /* CharacterDetail.png in Resources */ = {isa = PBXBuildFile; fileRef = 844862AA2832819600348C77 /* CharacterDetail.png */; };
-		844862AD2832819600348C77 /* CharactersList.png in Resources */ = {isa = PBXBuildFile; fileRef = 844862AB2832819600348C77 /* CharactersList.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,13 +123,13 @@
 		08DBD9D9282ED528008B804D /* ResultsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsModel.swift; sourceTree = "<group>"; };
 		84421529283382E6006FF532 /* CharactersServiceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersServiceTest.swift; sourceTree = "<group>"; };
 		8442152B28338B3F006FF532 /* EnterAPIKeys.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EnterAPIKeys.png; sourceTree = "<group>"; };
+		8442152D2833AB5F006FF532 /* CharactersList.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CharactersList.png; sourceTree = "<group>"; };
 		84486289282E7B5700348C77 /* APIKeysRetriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeysRetriver.swift; sourceTree = "<group>"; };
 		8448628B282E7CE600348C77 /* APIAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIAuthenticator.swift; sourceTree = "<group>"; };
 		8448629D2832331F00348C77 /* CharactersViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModelTest.swift; sourceTree = "<group>"; };
 		844862A2283248FC00348C77 /* CharacterDetailViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewModelTest.swift; sourceTree = "<group>"; };
 		844862A6283250CC00348C77 /* APIAuthenticatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIAuthenticatorTest.swift; sourceTree = "<group>"; };
 		844862AA2832819600348C77 /* CharacterDetail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CharacterDetail.png; sourceTree = "<group>"; };
-		844862AB2832819600348C77 /* CharactersList.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CharactersList.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -363,7 +363,7 @@
 			isa = PBXGroup;
 			children = (
 				844862AA2832819600348C77 /* CharacterDetail.png */,
-				844862AB2832819600348C77 /* CharactersList.png */,
+				8442152D2833AB5F006FF532 /* CharactersList.png */,
 				8442152B28338B3F006FF532 /* EnterAPIKeys.png */,
 			);
 			path = Screens;
@@ -473,8 +473,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8442152E2833AB5F006FF532 /* CharactersList.png in Resources */,
 				038042F6282542AB005364DA /* CharactersViewController.xib in Resources */,
-				844862AD2832819600348C77 /* CharactersList.png in Resources */,
 				844862AC2832819600348C77 /* CharacterDetail.png in Resources */,
 				038406CB2824F5A400B2FFB6 /* LaunchScreen.storyboard in Resources */,
 				8442152C28338B3F006FF532 /* EnterAPIKeys.png in Resources */,
