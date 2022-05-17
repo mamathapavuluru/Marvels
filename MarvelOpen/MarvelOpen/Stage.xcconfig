@@ -1,0 +1,14 @@
+//
+//  Stage.xcconfig
+//  MarvelOpen
+//
+//  Created by Mamatha on 06/05/22.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+
+#include "Release.xcconfig"
+
+SCHEME = STAGE
