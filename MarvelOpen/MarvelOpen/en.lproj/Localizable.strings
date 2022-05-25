@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  MarvelOpen
+
+  Created by admin on 5/25/22.
+  
+*/
+"Characters" = "Characters";
+"OK" = "OK";
+"kAlertTitle" = "Alert..!";
+"kParsingErrorMessage" = "Error occured while parsing the data";
+"kRequestFailureError" = "GET Request failed";

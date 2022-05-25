@@ -18,7 +18,7 @@ class CharactersViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.title = "Characters"
+        self.title = NSLocalizedString(kCharactersTitle, comment: "")
         
         self.setCharactersTableView()
         self.initCharacterViewModel()
