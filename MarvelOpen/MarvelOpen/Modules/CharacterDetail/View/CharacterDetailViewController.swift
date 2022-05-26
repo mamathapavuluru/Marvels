@@ -7,7 +7,13 @@
 
 import UIKit
 
+protocol CharacterDetailCoordinatorDelegate: AnyObject {
+    func didPopCharacterDetailViewController()
+}
+
 class CharacterDetailViewController: UIViewController {
+    
+    weak var detailCoordinatorDelegate: CharacterDetailCoordinatorDelegate?
     
     @IBOutlet private weak var characterDetailImageView: UIImageView!
     @IBOutlet private weak var characterDetailNameLabel: UILabel!
@@ -23,6 +29,10 @@ class CharacterDetailViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         self.initCharacterDetailViewModel()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        detailCoordinatorDelegate?.didPopCharacterDetailViewController()
     }
 }
 

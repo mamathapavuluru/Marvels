@@ -12,14 +12,14 @@ extension UIViewController {
     
     func startLoadingActivityIndicator() {
         let activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView.init(style: .large)
-        activityIndicator.tag = 9999
+        activityIndicator.tag = kAlertControllerTag
         self.view.addSubview(activityIndicator)
         activityIndicator.startAnimating()
         activityIndicator.center = self.view.center
     }
     
     func stopLoadingActivityIndicator() {
-        if let activityIndicator = self.view.subviews.filter({$0.tag == 9999}).first as? UIActivityIndicatorView {
+        if let activityIndicator = self.view.subviews.filter({$0.tag == kAlertControllerTag}).first as? UIActivityIndicatorView {
             activityIndicator.stopAnimating()
             activityIndicator.removeFromSuperview()
         }

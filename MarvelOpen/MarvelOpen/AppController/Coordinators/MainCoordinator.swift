@@ -28,10 +28,7 @@ class MainCoordinator: Coordinator {
 
 private extension MainCoordinator {
     func showCharacters() {
-        
         let charactersDependencies = CharactersDependenciesAdapter(environment: dependencyContainer.scheme)
-        
-        
         let charactersCoordinator = CharactersCoordinator(
             navigationController: navigationController,
             dependencies: charactersDependencies

@@ -20,6 +20,9 @@ enum Shadow {
     static let offset = CGSize(width: 0, height: 6)
     static let radius: CGFloat = 10
 }
+let kAlertControllerTag:Int = 999
+let kHttpStatusCode200:Int = 200
+let kHttpStatusCode300:Int = 300
 
 let kAppBaseUrl = "https://gateway.marvel.com/v1/public/"
 let kAPIPrivateKey = "PRIVATEKEY"

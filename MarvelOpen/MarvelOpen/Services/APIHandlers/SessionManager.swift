@@ -49,7 +49,7 @@ class HttpRequestHelper {
                 complete(false, nil)
                 return
             }
-            guard let response = response as? HTTPURLResponse, (200 ..< 300) ~= response.statusCode else {
+            guard let response = response as? HTTPURLResponse, (kHttpStatusCode200 ..< kHttpStatusCode300) ~= response.statusCode else {
                 complete(false, nil)
                 return
             }

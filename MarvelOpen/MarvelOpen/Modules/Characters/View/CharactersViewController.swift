@@ -7,7 +7,13 @@
 
 import UIKit
 
+protocol CharactersCoordinatorDelegate: AnyObject {
+    func didSelectCharacter(characterId:Int)
+}
+
 class CharactersViewController: UIViewController {
+    
+    weak var coordinatorDelegate: CharactersCoordinatorDelegate?
     
     @IBOutlet weak var characterTableView: UITableView!
     lazy var viewModel = {
@@ -85,9 +91,7 @@ extension CharactersViewController: UITableViewDelegate, UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let viewcontroller = CharacterDetailViewController(nibName: "CharacterDetailViewController", bundle: nil)
-        viewcontroller.characterID = viewModel.selectedCharacterID(at: indexPath.row)
-        self.navigationController?.pushViewController(viewcontroller, animated: true)
+        coordinatorDelegate?.didSelectCharacter(characterId: viewModel.selectedCharacterID(at: indexPath.row) ?? 0)
     }
     
     

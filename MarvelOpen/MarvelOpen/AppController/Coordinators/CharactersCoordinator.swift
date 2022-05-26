@@ -38,6 +38,19 @@ private extension CharactersCoordinator {
 
     func createCharactersViewController() -> UIViewController {
         let viewcontroller = CharactersViewController(nibName: "CharactersViewController", bundle: nil)
+        viewcontroller.coordinatorDelegate = self
         return viewcontroller
     }
+}
+
+extension CharactersCoordinator: CharactersCoordinatorDelegate
+{
+    func didSelectCharacter(characterId: Int) {
+        let characterDetailCoordinator = CharacterDetailCoordinator(navigationController: navigationController, characterID: characterId)
+        characterDetailCoordinator.delegate = self
+        characterDetailCoordinator.start()
+        childs.append(characterDetailCoordinator)
+    }
+    
+    
 }
