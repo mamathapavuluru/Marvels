@@ -5,7 +5,7 @@
 	<key>API_BASE_URL</key>
 	<string>https://gateway.marvel.com/v1/public/</string>
 	<key>ENVIRONMENT</key>
-	<string>DEBUG</string>
+	<string>$(SCHEME)</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
